@@ -1,0 +1,119 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height:100%;
+  background: #a9a9a9;
+}
+.tri{
+  height:100px;
+  width:100px;
+  border-radius:50%;
+  position:absolute;
+  cursor:pointer;
+  z-index: 3;
+  transition: all 0.1s;
+}
+.x{
+  background:#00f3da;
+ left:40%
+}
+.y{
+   background:#0083da;
+  top:30%;
+}
+#left{
+  left:30%;
+}
+#right{
+left:50%;
+background:#0033ff;
+
+}
+#up{
+top:10%
+}
+#down{
+top:50%;
+background:#ff0000;
+}
+
+.bouncingBall{
+  height:30px;
+  width:30px;
+  border-radius:50%;
+  background:#fff;
+  position:absolute;
+  top:34.5%;
+   left:42.5%;
+    z-index:5;
+    transition: all 0.5s;
+}
+.centerba{
+   position:absolute;
+   top:34.5%;
+   left:42.5%;
+}
+.upba{
+  position:absolute;
+    top:14.3%;
+  left:42.5%;
+}
+.leftba{
+  position:absolute;
+  top:34.5%;
+  left:32.3%;
+}
+.downba{
+  position:absolute;
+  top:54.6%;
+  left:42.5%;
+}
+adiv{
+  overflow:hidden
+}
+.rightba{
+  position:absolute;
+   top:34.5%;
+   left:52.3%;
+}
+#row1{
+ 
+}
+
+#he{
+  height: 100%;
+  width: 100%;
+  position :absolute;
+  top: 0px;
+  left: 0px;
+  background:#000;
+  text-align:  center;
+  color: #FFF;
+  z-index: 9;
+  overflow:hidden;
+
+}
+.lighter{
+    box-shadow:5px 5px 4px yellow,
+ -5px -5px 4px yellow;
+}
+.darker{
+    box-shadow:6px 5px 4px #a9a9a9,
+ -5px -5px 4px #a9a9a9;
+}
+#form{
+  margin-right: 100px;
+  padding:20px;
+  border-radius:25%;
+  margin-top:100px;
+  text-align:center;
+  background: white;
+
+}
+#score{
+  margin-top:10px;
+  color:red;
+  background: #3d3d3d;
+  padding: 4px;
+}

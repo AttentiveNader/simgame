@@ -2,10 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+     <link rel="stylesheet" href="./style.css">
+      <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <title>Simon Game</title>
   </head>
   <body style="background:#a9a9a9">
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+  <div id="app">
+   
+   <div id="adiv"  >
+    <div id="he" v-if="lowWidth">
+    <div style="margin-top: 200px">
+    <h1>its not responsive for low width screens (like mobile) </h1> 
+    <el-button type="info" @click="removeS">ok</el-button>
+    </div>
+    </div>
+    </div> 
+    <div id="left"  @click='addE(2) ;moveXY("left")' class="tri y ">
+    </div> 
+       <div  id="right"  @click='addE(4); moveXY("right")' class="tri y ">
+    </div> 
+  
+      <div  id="up"  @click=' addE(1) ; moveXY("up")' class="tri x ">
+    </div>
+    <div  id="down"   @click='addE(3); moveXY("down")' class="tri x">
+    </div>
+   
+     <div v-bind:class='{upba: directions.up,leftba:directions.left,downba:directions.down,rightba:directions.right,centerba:directions.center}'  class="bouncingBall"></div>
+  <div>
+    <el-row id="row1" type="flex" class="row-bg" justify="end" > 
+    <div id="form">
+    
+    <h2>Simon Game</h2>
+     <el-button type="warning"  @click="startFunc(); allC()">start</el-button>
+     <el-button type="danger" @click="stop">stop</el-button>
+     <div id="score">score : {{score}}</div>
+     <p>Developed by Nader Atef</p>
+      
+     </div>
+      </el-row>  
+   
+  </div>
+  </div>
+   
+     
+    <script src="./script.js"></script>
   </body>
 </html>
